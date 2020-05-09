@@ -6,7 +6,7 @@ const categoryRouter = require("./routes/category");
 const cors = require("cors");
 require("express-async-errors");
 require("./db");
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(express.json());
